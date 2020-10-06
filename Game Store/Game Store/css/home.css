@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+body {
+    background-image: linear-gradient(to right,#000000 ,  #6b1a81,#81c8e7,#6b1a81, black);
+    padding: 0;
+    margin: 0;
+  }
+ /* Navigation menu*/
+  .menu {
+    z-index: 2;
+      width: 100%;
+      height: 6%;
+      background-color: #000000;
+      padding: 12px;
+      font-size: 140%;
+      padding-top:20px;
+      opacity: 0.7;
+      position: fixed;
+      margin-bottom: 4%;
+      
+  }
+#logo{
+    padding-left: 15%;
+    padding-top: 3px;
+    margin: 0;
+    float: left;
+    position: absolute;
+    z-index: 3;
+    
+}
+.menu a{
+    
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 20px;
+   
+  
+
+  }
+  .menu a h3{
+    margin-top: 0;
+
+  
+  }
+  .menu:hover{
+  opacity: 1;}
+  .menu a:hover{
+    text-decoration: none;
+   background-color: #6b1f84;
+   background-size: 100%;
+  }
+  .w3-display-container{
+    width: 100%;
+        margin-top: 5%;  
+        position: relative;
+        display: block;
+  }
+
+  /*Displaying games section*/
+  .display{
+    background-color: rgba(107, 31, 132, 0.897);
+    width: 73%;
+    margin-top: 0.5%;
+    margin-bottom: 5px;
+    padding-top:0.5%;
+    padding-bottom: 0.4%;
+    border-radius: 8px;
+  }
+  .display h2{
+    padding: 0;
+    padding-left:2%;
+    padding-bottom: 0.5%;
+    text-align: left;
+}
+.display a{
+    padding-right: 2px;
+}
+.display a img:hover{
+    opacity: 0.7;
+}
+/* The background*/
+  .g-cntainer{
+      position: fixed;
+    z-index: -1;
+  }
+  
+  #galaxy {
+    position: fixed;
+
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: background 0.8s ease-out;
+    -moz-transition: background 0.8s ease-out;
+    -o-transition: background 0.8s ease-out;
+    -ms-transition: background 0.8s ease-out;
+    transition: background 0.8s ease-out;
+  }
+  
+  #galaxy,
+  #galaxy .bg {
+    z-index: -1;
+    width: 100%;
+    
+  }
+  
+  #galaxy * {
+    z-index: -1;
+    position: absolute;
+    
+  }
+  
+
+  #galaxy .bg.center {
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 200px;
+    margin: -100px 0 0 -200px;
+    opacity: 0.8;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    
+  }
+  
+  #galaxy [class^="stars"] {
+    z-index: -1;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+  }
+  
+  #galaxy .stars-back {
+    z-index: -1;
+    background: url("https://raw.githubusercontent.com/gurde/css3-animated-galaxy/master/img/back.png");
+    -webkit-animation: orbit-clock-wise 440s infinite linear;
+    -moz-animation: orbit-clock-wise 440s infinite linear;
+    -o-animation: orbit-clock-wise 440s infinite linear;
+    -ms-animation: orbit-clock-wise 440s infinite linear;
+    animation: orbit-clock-wise 440s infinite linear;
+    
+  }
+  
+  #galaxy .stars-middle {
+    z-index: -1;
+    background: url("https://raw.githubusercontent.com/gurde/css3-animated-galaxy/master/img/middle.png");
+    -webkit-animation: orbit-counter-clock-wise 360s infinite linear;
+    -moz-animation: orbit-counter-clock-wise 360s infinite linear;
+    -o-animation: orbit-counter-clock-wise 360s infinite linear;
+    -ms-animation: orbit-counter-clock-wise 360s infinite linear;
+    animation: orbit-counter-clock-wise 360s infinite linear;
+  }
+  
+  #galaxy .stars-front {
+    z-index: -1;
+    background: url("https://raw.githubusercontent.com/gurde/css3-animated-galaxy/master/img/front.png");
+    -webkit-animation: orbit-clock-wise 160s infinite linear;
+    -moz-animation: orbit-clock-wise 160s infinite linear;
+    -o-animation: orbit-clock-wise 160s infinite linear;
+    -ms-animation: orbit-clock-wise 160s infinite linear;
+    animation: orbit-clock-wise 160s infinite linear;
+  }
+  
+  @-webkit-keyframes orbit-clock-wise {
+    0% {
+      opacity: 0.4;
+      -webkit-transform: rotate(0deg);
+    }
+ 
+    100% {
+      opacity: 0.4;
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes orbit-counter-clock-wise {
+    from {
+      -webkit-transform: rotate(360deg);
+    }
+    to {
+      -webkit-transform: rotate(0deg);
+    }
+  }
+  @-moz-keyframes orbit-clock-wise {
+    0% {
+      opacity: 0.4;
+      -moz-transform: rotate(0deg);
+    }
+
+    100% {
+      opacity: 0.4;
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes orbit-counter-clock-wise {
+    from {
+      -moz-transform: rotate(360deg);
+    }
+    to {
+      -moz-transform: rotate(0deg);
+    }
+  }
+  @-o-keyframes orbit-clock-wise {
+    0% {
+      opacity: 0.4;
+      -o-transform: rotate(0deg);
+    }
+    100% {
+      opacity: 0.4;
+      -o-transform: rotate(360deg);
+    }
+  }
+  @-o-keyframes orbit-counter-clock-wise {
+    from {
+      -o-transform: rotate(360deg);
+    }
+    to {
+      -o-transform: rotate(0deg);
+    }
+  }
+  @-ms-keyframes orbit-clock-wise {
+    0% {
+      opacity: 0.4;
+      -ms-transform: rotate(0deg);
+    }
+    100% {
+      opacity: 0.4;
+      -ms-transform: rotate(360deg);
+    }
+  }
+  @-ms-keyframes orbit-counter-clock-wise {
+    from {
+      -ms-transform: rotate(360deg);
+    }
+    to {
+      -ms-transform: rotate(0deg);
+    }
+  }
+  @keyframes orbit-clock-wise {
+    0% {
+      opacity: 0.4;
+      transform: rotate(0deg);
+    }
+
+    100% {
+      opacity: 0.4;
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes orbit-counter-clock-wise {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+ /* Contact footer */
+  .contact{
+      background-color:rgba(0, 0, 0, 0.7);
+      text-align: left;
+      padding-top: 1%;
+      padding-bottom: 1%;
+   
+  }
+.contact img{
+    padding-right: 9px; 
+}
+.contact p{
+    font-family: 'Century Gothic', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+.contact div {
+    padding-left: 14%;
+}
+.contact div h2{
+    display: inline;
+    
+}
+.contact div p{
+    display: inline;
+    padding-left: 44%;
+}
